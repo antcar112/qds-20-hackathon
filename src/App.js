@@ -9,7 +9,8 @@ import GlobalStyles from './styles/GlobalStyles';
 import FileUpload from './pages/FileUpload';
 import Graph from './pages/Graph';
 import Map from './pages/Map';
-import VerticalNav from './components/VerticalNav/VerticalNav';
+import VerticalNav from './VerticalNav';
+import RightBar from './RightBar';
 
 const FlexContainer = styled.div`display: flex;`;
 
@@ -33,6 +34,7 @@ function App() {
 								<Map />
 							</Route>
 						</Switch>
+						<RightBar />
 					</FlexContainer>
 				</div>
 			</Router>
