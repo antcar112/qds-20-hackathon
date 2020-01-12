@@ -30,7 +30,15 @@ class Apex2 extends Component {
 				],
 				xaxis  : {
 					type          : 'category',
-					categories    : [],
+                    categories: [
+						'2/29/2020',
+						'3/01/2020',
+						'3/02/2020',
+						'3/03/2020',
+						'3/04/2020',
+						'3/05/2020',
+						'3/06/2020'
+					],
 					labels        : {
 						show                  : true,
 						rotate                : -45,
