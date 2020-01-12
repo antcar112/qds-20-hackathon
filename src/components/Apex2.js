@@ -15,6 +15,7 @@ class Apex2 extends Component {
 		this.state = {
 			series  : [
 				{
+<<<<<<< HEAD
 					data : this.props.data,
 					type : 'column'
 				},
@@ -25,19 +26,58 @@ class Apex2 extends Component {
 				{
 					data : this.props.data2,
 					type : 'line'
+=======
+                    name: 'Day Shift',
+					data : this.props.data
+				},
+				{
+                    name: 'Night Shift',
+					data : this.props.data2
+>>>>>>> 07ac05265c89f63f8655d53ea406e07e8223a360
 				}
 			],
 			options : {
 				chart  : {
 					type : 'bar'
-				},
+                },
+                plotOptions: {
+                    bar: {
+                      dataLabels: {
+                        position: 'top', // top, center, bottom
+                      },
+                    }
+                  },
+                  dataLabels: {
+                    enabled: true,
+                    formatter: function (val) {
+                      return val + "%";
+                    },
+                    offsetY: -20,
+                    style: {
+                      fontSize: '12px',
+                      colors: ["#304758"]
+                    }
+                },
 				colors : [
+<<<<<<< HEAD
 					'#ffff00',
 					'#000088'
+=======
+                    '#FFF000',
+                    '#000FF8'
+>>>>>>> 07ac05265c89f63f8655d53ea406e07e8223a360
 				],
 				xaxis  : {
 					type          : 'category',
-					categories    : [],
+                    categories: [
+						'2/29/2020',
+						'3/01/2020',
+						'3/02/2020',
+						'3/03/2020',
+						'3/04/2020',
+						'3/05/2020',
+						'3/06/2020'
+					],
 					labels        : {
 						show                  : true,
 						rotate                : -45,
@@ -88,6 +128,8 @@ class Apex2 extends Component {
 							type     : 'solid',
 							color    : '#B1B9C4',
 							gradient : {
+                                shade: 'light',
+                                shadeIntensity: 0.25,
 								colorFrom   : '#D8E3F0',
 								colorTo     : '#BED1E6',
 								stops       : [
