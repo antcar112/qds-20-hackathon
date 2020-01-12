@@ -23,7 +23,7 @@ class Apex2 extends Component {
 			],
 			options : {
 				chart  : {
-					type : 'line'
+					type : 'bar'
 				},
 				colors : [
 					'#008FFB'
@@ -114,7 +114,7 @@ class Apex2 extends Component {
 				<ReactApexChart
 					options={this.state.options}
 					series={this.state.series}
-					type="line"
+					type="bar"
 					height="95%"
 				/>
 			</ChartContainer>
