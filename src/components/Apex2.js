@@ -15,61 +15,45 @@ class Apex2 extends Component {
 		this.state = {
 			series  : [
 				{
-<<<<<<< HEAD
-					data : this.props.data,
-					type : 'column'
-				},
-				{
-					data : this.props.data2,
-					type : 'column'
-				},
-				{
-					data : this.props.data2,
-					type : 'line'
-=======
-                    name: 'Day Shift',
+					name : 'Day Shift',
 					data : this.props.data
 				},
 				{
-                    name: 'Night Shift',
+					name : 'Night Shift',
 					data : this.props.data2
->>>>>>> 07ac05265c89f63f8655d53ea406e07e8223a360
 				}
 			],
 			options : {
-				chart  : {
+				chart       : {
 					type : 'bar'
-                },
-                plotOptions: {
-                    bar: {
-                      dataLabels: {
-                        position: 'top', // top, center, bottom
-                      },
-                    }
-                  },
-                  dataLabels: {
-                    enabled: true,
-                    formatter: function (val) {
-                      return val + "%";
-                    },
-                    offsetY: -20,
-                    style: {
-                      fontSize: '12px',
-                      colors: ["#304758"]
-                    }
-                },
-				colors : [
-<<<<<<< HEAD
-					'#ffff00',
-					'#000088'
-=======
-                    '#FFF000',
-                    '#000FF8'
->>>>>>> 07ac05265c89f63f8655d53ea406e07e8223a360
+				},
+				plotOptions : {
+					bar : {
+						dataLabels : {
+							position : 'top' // top, center, bottom
+						}
+					}
+				},
+				dataLabels  : {
+					enabled   : true,
+					formatter : function(val) {
+						return val + '%';
+					},
+					offsetY   : -20,
+					style     : {
+						fontSize : '12px',
+						colors   : [
+							'#304758'
+						]
+					}
+				},
+				colors      : [
+					'#FFF000',
+					'#000FF8'
 				],
-				xaxis  : {
+				xaxis       : {
 					type          : 'category',
-                    categories: [
+					categories    : [
 						'2/29/2020',
 						'3/01/2020',
 						'3/02/2020',
@@ -128,27 +112,27 @@ class Apex2 extends Component {
 							type     : 'solid',
 							color    : '#B1B9C4',
 							gradient : {
-                                shade: 'light',
-                                shadeIntensity: 0.25,
-								colorFrom   : '#D8E3F0',
-								colorTo     : '#BED1E6',
-								stops       : [
+								shade          : 'light',
+								shadeIntensity : 0.25,
+								colorFrom      : '#D8E3F0',
+								colorTo        : '#BED1E6',
+								stops          : [
 									0,
 									100
 								],
-								opacityFrom : 0.4,
-								opacityTo   : 0.5
+								opacityFrom    : 0.4,
+								opacityTo      : 0.5
 							}
 						}
 					}
 				},
-				yaxis  : {
+				yaxis       : {
 					title  : { text: this.props.yaxis },
 					labels : {
 						minWidth : 40
 					}
 				},
-				zoom   : {
+				zoom        : {
 					type           : 'x',
 					enabled        : true,
 					autoScaleYaxis : true
