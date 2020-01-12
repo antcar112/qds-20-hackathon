@@ -8,6 +8,7 @@ import GlobalStyles from './styles/GlobalStyles';
 import FileUpload from './pages/FileUpload';
 import Graph from './pages/Graph';
 import Map from './pages/Map';
+import VerticalNav from './VerticalNav';
 
 function App() {
 	return (
@@ -16,6 +17,7 @@ function App() {
 			<Router>
 				<div className="App">
 					<NavComponent />
+          <VerticalNav />
 					<p>Content goes here.</p>
 					<Route exact path="/">
 						<FileUpload />
