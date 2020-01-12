@@ -1,12 +1,49 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Card from '../components/Card';
-import ApexDuel from '../components/ApexDuel';
+import Spinner from '../components/Spinner';
+import ApexProd from '../components/ApexProd';
 import { data } from '../data/data';
 
 const Dumping = () => {
+	const [
+		loading,
+		setLoading
+	] = useState(false);
+	const [
+		prodData,
+		setData
+	] = useState([]);
+
+	useEffect(
+		() => {
+			setLoading(true);
+			const fetchData = async () => {
+				const response = await fetch(
+					'http://localhost:5000/api/productivity'
+				);
+				const responseData = await response.json();
+				const responseArray = responseData.map(el => el.productivity);
+				setData(responseArray);
+				setLoading(false);
+			};
+			fetchData();
+		},
+		[
+			setLoading
+		]
+	);
 	return (
 		<Card>
-			<ApexDuel data={data} yaxis="Dumping Trucks" />
+			{loading ? (
+				<Spinner />
+			) : (
+				<ApexProd
+					data={data}
+					prodData={prodData}
+					name="Dumping"
+					yaxis="Dumping Trucks"
+				/>
+			)}
 		</Card>
 	);
 };

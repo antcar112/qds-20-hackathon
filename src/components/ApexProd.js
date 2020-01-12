@@ -8,36 +8,48 @@ const ChartContainer = styled.div`
 	width: 100%;
 `;
 
-class Apex2 extends Component {
+class Apex extends Component {
 	constructor(props) {
 		super(props);
 
 		this.state = {
 			series  : [
 				{
-					data : this.props.data,
-					type : 'column'
+					name : this.props.name,
+					data : [
+						65000,
+						77000,
+						87000,
+						100000,
+						90000,
+						56000,
+						92000
+					]
 				},
 				{
-					data : this.props.data2,
-					type : 'column'
-				},
-				{
-					data : this.props.data2,
-					type : 'line'
+					name : 'Production',
+					data : this.props.prodData
 				}
 			],
 			options : {
 				chart  : {
-					type : 'bar'
+					type : 'line'
 				},
 				colors : [
-					'#ffff00',
-					'#000088'
+					'#008FFB',
+					'#72ff66'
 				],
 				xaxis  : {
 					type          : 'category',
-					categories    : [],
+					categories    : [
+						'2/29/2020',
+						'3/01/2020',
+						'3/02/2020',
+						'3/03/2020',
+						'3/04/2020',
+						'3/05/2020',
+						'3/06/2020'
+					],
 					labels        : {
 						show                  : true,
 						rotate                : -45,
@@ -57,7 +69,7 @@ class Apex2 extends Component {
 						offsetY    : 0
 					},
 					tickAmount    : undefined,
-					tickPlacement : 'between',
+					tickPlacement : 'center',
 					min           : undefined,
 					max           : undefined,
 					range         : undefined,
@@ -121,7 +133,7 @@ class Apex2 extends Component {
 				<ReactApexChart
 					options={this.state.options}
 					series={this.state.series}
-					type="bar"
+					type="line"
 					height="95%"
 				/>
 			</ChartContainer>
@@ -129,4 +141,4 @@ class Apex2 extends Component {
 	}
 }
 
-export default Apex2;
+export default Apex;
