@@ -15,9 +15,11 @@ class Apex2 extends Component {
 		this.state = {
 			series  : [
 				{
+                    name: 'Day Shift',
 					data : this.props.data
 				},
 				{
+                    name: 'Night Shift',
 					data : this.props.data2
 				}
 			],
@@ -26,7 +28,8 @@ class Apex2 extends Component {
 					type : 'bar'
 				},
 				colors : [
-					'#008FFB'
+                    '#008FFB',
+                    '#000FA0'
 				],
 				xaxis  : {
 					type          : 'category',
