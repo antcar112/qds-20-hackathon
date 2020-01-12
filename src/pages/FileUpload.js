@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from 'react-bootstrap/Card';
+import Card from '../components/Card';
 
 const FileUpload = () => {
 	return <Card>File Upload</Card>;

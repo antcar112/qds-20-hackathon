@@ -1,6 +1,7 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+import styled from 'styled-components';
 
 import NavComponent from './NavComponent';
 import theme from './styles/Theme';
@@ -10,6 +11,8 @@ import Graph from './pages/Graph';
 import Map from './pages/Map';
 import VerticalNav from './VerticalNav';
 
+const FlexContainer = styled.div`display: flex;`;
+
 function App() {
 	return (
 		<ThemeProvider theme={theme}>
@@ -17,17 +20,18 @@ function App() {
 			<Router>
 				<div className="App">
 					<NavComponent />
-          <VerticalNav />
-					<p>Content goes here.</p>
-					<Route exact path="/">
-						<FileUpload />
-					</Route>
-					<Route path="/graph">
-						<Graph />
-					</Route>
-					<Route path="/map">
-						<Map />
-					</Route>
+					<FlexContainer>
+						<VerticalNav />
+						<Route exact path="/">
+							<FileUpload />
+						</Route>
+						<Route path="/graph">
+							<Graph />
+						</Route>
+						<Route path="/map">
+							<Map />
+						</Route>
+					</FlexContainer>
 				</div>
 			</Router>
 		</ThemeProvider>
