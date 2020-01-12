@@ -24,9 +24,12 @@ export default createGlobalStyle`
         background: ${({ theme }) => theme.color.bg};
         color: ${({ theme }) => theme.color.text};
         font-size: 16px;
+        height: 100vh;
+        
     }
     main {
         padding-top: 60px;
+        
     }
     h1 {
         font-family: ${({ theme }) => theme.font.heading};

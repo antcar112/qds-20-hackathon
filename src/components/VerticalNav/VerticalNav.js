@@ -8,7 +8,7 @@ import { GoGraph } from 'react-icons/go';
 import VerticalNavLink from './VerticalNavLink';
 
 const StyledVerticalNav = styled.aside`
-	height: 100vh;
+	height: calc(100vh - 60px);
 	line-height: 3em;
 	width: 70px;
 	background-color: white;

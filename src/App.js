@@ -12,7 +12,11 @@ import Map from './pages/Map';
 import VerticalNav from './components/VerticalNav/VerticalNav';
 import RightBar from './components/RightBar';
 
-const FlexContainer = styled.div`display: flex;`;
+const FlexContainer = styled.main`
+	display: flex;
+	max-height: 100vh;
+	padding-top: 60px;
+`;
 
 function App() {
 	return (
@@ -34,7 +38,7 @@ function App() {
 								<Map />
 							</Route>
 						</Switch>
-						<RightBar />
+						{/* <RightBar /> */}
 					</FlexContainer>
 				</div>
 			</Router>

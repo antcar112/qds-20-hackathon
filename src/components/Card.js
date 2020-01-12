@@ -2,8 +2,9 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 
 const cardStyles = {
-	width  : '600px',
-	margin : '0 auto'
+	width     : '100%',
+	margin    : '70px 120px',
+	maxHeight : '100%'
 };
 
 const ComponentCard = ({ children }) => {
