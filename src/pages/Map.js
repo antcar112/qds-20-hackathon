@@ -1,7 +1,8 @@
 import React from 'react';
+import Card from '../components/Card';
 
 const Map = () => {
-	return <div>Map</div>;
+	return <Card>Map</Card>;
 };
 
 export default Map;

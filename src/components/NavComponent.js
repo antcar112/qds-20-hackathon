@@ -1,17 +1,19 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
+import { FiLogOut } from 'react-icons/fi';
 
 const NavComponent = () => {
 	return (
 		<div>
 			<Navbar bg="light" expand="lg">
-				<Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+				<Navbar.Brand href="/">I just did the front end</Navbar.Brand>
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
 				<Navbar.Collapse id="basic-navbar-nav">
-					<Nav className="mr-auto">
-						<Nav.Link href="/">Home</Nav.Link>
-						<Nav.Link href="/graph">Graph</Nav.Link>
+					<Nav className="ml-auto">
+						<Nav.Link href="#">
+							<FiLogOut /> Log Out
+						</Nav.Link>
 					</Nav>
 				</Navbar.Collapse>
 			</Navbar>
