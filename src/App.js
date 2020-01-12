@@ -35,16 +35,16 @@ function App() {
 							<Route exact path="/">
 								<Productivity />
 							</Route>
-							<Route path="/bunching">
+							<Route exact path="/bunching">
 								<Bunching />
 							</Route>
-							<Route path="/loading">
+							<Route exact path="/loading">
 								<Loading />
 							</Route>
-							<Route path="/dumping">
+							<Route exact path="/dumping">
 								<Dumping />
 							</Route>
-							<Route path="/roads">
+							<Route exact path="/roads">
 								<Roads />
 							</Route>
 						</Switch>

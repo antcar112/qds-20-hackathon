@@ -27,7 +27,15 @@ class Apex extends Component {
 				],
 				xaxis  : {
 					type          : 'category',
-					categories    : [],
+					categories    : [
+						'2/29/2020',
+						'3/01/2020',
+						'3/02/2020',
+						'3/03/2020',
+						'3/04/2020',
+						'3/05/2020',
+						'3/06/2020'
+					],
 					labels        : {
 						show                  : true,
 						rotate                : -45,
@@ -47,14 +55,14 @@ class Apex extends Component {
 						offsetY    : 0
 					},
 					tickAmount    : undefined,
-					tickPlacement : 'between',
+					tickPlacement : 'center',
 					min           : undefined,
 					max           : undefined,
 					range         : undefined,
 					floating      : false,
 					position      : 'bottom',
 					title         : {
-						text    : 'X-axis',
+						text    : 'Date',
 						offsetX : 0,
 						offsetY : 0,
 						style   : {
@@ -91,7 +99,7 @@ class Apex extends Component {
 					}
 				},
 				yaxis  : {
-					title  : { text: 'Y-axis' },
+					title  : { text: this.props.yaxis },
 					labels : {
 						minWidth : 40
 					}
