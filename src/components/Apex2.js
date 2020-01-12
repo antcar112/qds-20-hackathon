@@ -15,7 +15,11 @@ class Apex2 extends Component {
 		this.state = {
 			series  : [
 				{
+<<<<<<< HEAD
 					name : 'Day Shift',
+=======
+                    name: 'Day Shift',
+>>>>>>> d4cbcd2b5d522b968d7e13acbc6d5f4b7a40821e
 					data : this.props.data
 				},
 				{
@@ -26,6 +30,7 @@ class Apex2 extends Component {
 			options : {
 				chart       : {
 					type : 'bar'
+<<<<<<< HEAD
 				},
 				plotOptions : {
 					bar : {
@@ -50,6 +55,30 @@ class Apex2 extends Component {
 				colors      : [
 					'#FFF000',
 					'#000FF8'
+=======
+                },
+                plotOptions: {
+                    bar: {
+                      dataLabels: {
+                        position: 'top', // top, center, bottom
+                      },
+                    }
+                  },
+                  dataLabels: {
+                    enabled: true,
+                    formatter: function (val) {
+                      return val + "%";
+                    },
+                    offsetY: -20,
+                    style: {
+                      fontSize: '12px',
+                      colors: ["#304758"]
+                    }
+                },
+				colors : [
+					'#ffff00',
+					'#000088'
+>>>>>>> d4cbcd2b5d522b968d7e13acbc6d5f4b7a40821e
 				],
 				xaxis       : {
 					type          : 'category',
