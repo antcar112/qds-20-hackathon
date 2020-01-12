@@ -26,10 +26,28 @@ class Apex2 extends Component {
 			options : {
 				chart  : {
 					type : 'bar'
-				},
+                },
+                plotOptions: {
+                    bar: {
+                      dataLabels: {
+                        position: 'top', // top, center, bottom
+                      },
+                    }
+                  },
+                  dataLabels: {
+                    enabled: true,
+                    formatter: function (val) {
+                      return val + "%";
+                    },
+                    offsetY: -20,
+                    style: {
+                      fontSize: '12px',
+                      colors: ["#304758"]
+                    }
+                },
 				colors : [
-                    '#008FFB',
-                    '#000FA0'
+                    '#FFF000',
+                    '#000FF8'
 				],
 				xaxis  : {
 					type          : 'category',
@@ -92,6 +110,8 @@ class Apex2 extends Component {
 							type     : 'solid',
 							color    : '#B1B9C4',
 							gradient : {
+                                shade: 'light',
+                                shadeIntensity: 0.25,
 								colorFrom   : '#D8E3F0',
 								colorTo     : '#BED1E6',
 								stops       : [

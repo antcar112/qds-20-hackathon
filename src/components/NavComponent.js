@@ -36,7 +36,7 @@ const NavComponent = () => {
 	return (
 		<StyledNavbar>
 			<NavLink to="/" className="nav__brand">
-				<GiMineWagon /> Mining
+				<GiMineWagon /> V O L T
 			</NavLink>
 			<Nav className="ml-auto">
 				<NavLink to="#">
