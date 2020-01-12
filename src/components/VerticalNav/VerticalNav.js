@@ -1,8 +1,8 @@
 import React from 'react';
 import Nav from 'react-bootstrap/Nav';
 import styled from 'styled-components';
-import { IoIosAddCircleOutline } from 'react-icons/io';
-import { FaRegMap } from 'react-icons/fa';
+import { GiMineTruck, GiCargoCrane } from 'react-icons/gi';
+import { FaRegMap, FaRoad } from 'react-icons/fa';
 import { GoGraph } from 'react-icons/go';
 
 import VerticalNavLink from './VerticalNavLink';
@@ -10,14 +10,18 @@ import VerticalNavLink from './VerticalNavLink';
 const StyledVerticalNav = styled.aside`
 	height: calc(100vh - 60px);
 	line-height: 3em;
-	width: 70px;
-	background-color: white;
+	width: 150px;
+	background-color: ${({ theme }) => theme.color.bgCard};
 `;
 
 const links = [
-	{ name: 'Add', path: '/', icon: <IoIosAddCircleOutline /> },
-	{ name: 'Graph', path: '/graph', icon: <GoGraph /> },
-	{ name: 'Map', path: '/map', icon: <FaRegMap /> }
+	{ name: 'Productivity', path: '/', icon: <GoGraph /> },
+	{ name: 'Bunching', path: '/bunching', icon: <FaRegMap /> },
+	{ name: 'Loading', path: '/loading', icon: <GiCargoCrane /> },
+	{ name: 'Dumping', path: '/dumping', icon: <GiMineTruck /> },
+	{ name: 'Roads', path: '/roads', icon: <FaRoad /> }
+	// { name: 'Map', path: '/map', icon: <FaRegMap /> },
+	// { name: 'Add', path: '/add', icon: <IoIosAddCircleOutline /> }
 ];
 
 const VerticalNav = () => {

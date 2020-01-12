@@ -6,8 +6,12 @@ import styled from 'styled-components';
 import NavComponent from './components/NavComponent';
 import theme from './styles/Theme';
 import GlobalStyles from './styles/GlobalStyles';
+import Productivity from './pages/Productivity';
+import Bunching from './pages/Bunching';
+import Loading from './pages/Loading';
+import Dumping from './pages/Dumping';
+import Roads from './pages/Roads';
 import FileUpload from './pages/FileUpload';
-import Graph from './pages/Graph';
 import Map from './pages/Map';
 import VerticalNav from './components/VerticalNav/VerticalNav';
 //import RightBar from './RightBar';
@@ -29,13 +33,19 @@ function App() {
 						<VerticalNav />
 						<Switch>
 							<Route exact path="/">
-								<FileUpload />
+								<Productivity />
 							</Route>
-							<Route path="/graph">
-								<Graph />
+							<Route path="/bunching">
+								<Bunching />
 							</Route>
-							<Route path="/map">
-								<Map />
+							<Route path="/loading">
+								<Loading />
+							</Route>
+							<Route path="/dumping">
+								<Dumping />
+							</Route>
+							<Route path="/roads">
+								<Roads />
 							</Route>
 						</Switch>
 						{/* <RightBar /> */}
