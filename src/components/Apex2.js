@@ -15,25 +15,12 @@ class Apex2 extends Component {
 		this.state = {
 			series  : [
 				{
-<<<<<<< HEAD
-					data : this.props.data,
-					type : 'column'
-				},
-				{
-					data : this.props.data2,
-					type : 'column'
-				},
-				{
-					data : this.props.data2,
-					type : 'line'
-=======
                     name: 'Day Shift',
 					data : this.props.data
 				},
 				{
                     name: 'Night Shift',
 					data : this.props.data2
->>>>>>> 07ac05265c89f63f8655d53ea406e07e8223a360
 				}
 			],
 			options : {
@@ -59,13 +46,8 @@ class Apex2 extends Component {
                     }
                 },
 				colors : [
-<<<<<<< HEAD
 					'#ffff00',
 					'#000088'
-=======
-                    '#FFF000',
-                    '#000FF8'
->>>>>>> 07ac05265c89f63f8655d53ea406e07e8223a360
 				],
 				xaxis  : {
 					type          : 'category',
