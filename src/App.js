@@ -2,6 +2,7 @@ import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
+import NavComponent from './NavComponent';
 import theme from './styles/Theme';
 import GlobalStyles from './styles/GlobalStyles';
 import FileUpload from './pages/FileUpload';
@@ -14,6 +15,7 @@ function App() {
 			<GlobalStyles />
 			<Router>
 				<div className="App">
+					<NavComponent />
 					<p>Content goes here.</p>
 					<Route exact path="/">
 						<FileUpload />
