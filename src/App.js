@@ -10,6 +10,7 @@ import FileUpload from './pages/FileUpload';
 import Graph from './pages/Graph';
 import Map from './pages/Map';
 import VerticalNav from './VerticalNav';
+import RightBar from './RightBar';
 
 const FlexContainer = styled.div`display: flex;`;
 
@@ -31,6 +32,7 @@ function App() {
 						<Route path="/map">
 							<Map />
 						</Route>
+            <RightBar />
 					</FlexContainer>
 				</div>
 			</Router>
