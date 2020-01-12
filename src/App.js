@@ -9,8 +9,8 @@ import GlobalStyles from './styles/GlobalStyles';
 import FileUpload from './pages/FileUpload';
 import Graph from './pages/Graph';
 import Map from './pages/Map';
-import VerticalNav from './VerticalNav';
-import RightBar from './RightBar';
+import VerticalNav from './components/VerticalNav/VerticalNav';
+import RightBar from './components/RightBar';
 
 const FlexContainer = styled.div`display: flex;`;
 
