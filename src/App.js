@@ -10,7 +10,7 @@ import FileUpload from './pages/FileUpload';
 import Graph from './pages/Graph';
 import Map from './pages/Map';
 import VerticalNav from './components/VerticalNav/VerticalNav';
-import RightBar from './components/RightBar';
+//import RightBar from './RightBar';
 
 const FlexContainer = styled.main`
 	display: flex;
