@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Spinner from '../components/Spinner';
 import Card from '../components/Card';
-import Apex from '../components/Apex';
+import ProdChart from '../components/ProdChart';
 // import { data } from '../data/data';
 
 const Productivity = () => {
@@ -34,7 +34,11 @@ const Productivity = () => {
 	);
 	return (
 		<Card>
-			{loading ? <Spinner /> : <Apex data={data} yaxis="Productivity" />}
+			{loading ? (
+				<Spinner />
+			) : (
+				<ProdChart data={data} yaxis="Productivity per Day" />
+			)}
 		</Card>
 	);
 };

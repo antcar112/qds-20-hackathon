@@ -6,7 +6,7 @@ import { data } from '../data/data';
 const Dumping = () => {
 	return (
 		<Card>
-			<Apex data={data} />
+			<Apex data={data} yaxis="Dumping Trucks" />
 		</Card>
 	);
 };

@@ -8,7 +8,7 @@ const ChartContainer = styled.div`
 	width: 100%;
 `;
 
-class Apex2 extends Component {
+class Apex extends Component {
 	constructor(props) {
 		super(props);
 
@@ -16,9 +16,6 @@ class Apex2 extends Component {
 			series  : [
 				{
 					data : this.props.data
-				},
-				{
-					data : this.props.data2
 				}
 			],
 			options : {
@@ -30,7 +27,15 @@ class Apex2 extends Component {
 				],
 				xaxis  : {
 					type          : 'category',
-					categories    : [],
+					categories    : [
+						'2/29/2020',
+						'3/01/2020',
+						'3/02/2020',
+						'3/03/2020',
+						'3/04/2020',
+						'3/05/2020',
+						'3/06/2020'
+					],
 					labels        : {
 						show                  : true,
 						rotate                : -45,
@@ -50,7 +55,7 @@ class Apex2 extends Component {
 						offsetY    : 0
 					},
 					tickAmount    : undefined,
-					tickPlacement : 'between',
+					tickPlacement : 'center',
 					min           : undefined,
 					max           : undefined,
 					range         : undefined,
@@ -122,4 +127,4 @@ class Apex2 extends Component {
 	}
 }
 
-export default Apex2;
+export default Apex;
