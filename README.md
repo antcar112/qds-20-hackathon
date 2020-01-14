@@ -14,7 +14,7 @@ The web component of VOLT was built using the [MERN stack](https://blog.hyperion
 * [MongoDB](https://www.mongodb.com/cloud/atlas)
 * [Express](https://expressjs.com/)
 * [Node.js](https://nodejs.org/en/)
-* [React.js](https://reactjs.org/).
+* [React.js](https://reactjs.org/)
 
 The following 3rd party libraries were also used to develop this project:
 * [Mongoose](https://mongoosejs.com/)
