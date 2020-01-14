@@ -17,7 +17,7 @@ The web component of VOLT was built using the [MERN stack](https://blog.hyperion
 * [React.js](https://reactjs.org/).
 
 The following 3rd party libraries were also used to develop this project:
-* [Mongoose](https://mongoosejs.com/docs/)
+* [Mongoose](https://mongoosejs.com/)
 * [Styled Components](https://www.styled-components.com/)
 * [React Icons](https://react-icons.netlify.com/#/)
 * [React Bootstrap](https://react-bootstrap.github.io/)
@@ -28,4 +28,4 @@ VOLT is hosted using:
 * [Heroku](https://www.heroku.com/home) (Node.js Back end)
 
 ## 👋 Contact
-Feel free to reach out and contact me if you have any questions. 
+Feel free to reach out if you have any questions. 
