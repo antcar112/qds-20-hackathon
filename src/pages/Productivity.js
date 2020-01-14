@@ -19,7 +19,7 @@ const Productivity = () => {
 			setLoading(true);
 			const fetchData = async () => {
 				const response = await fetch(
-					'http://localhost:5000/api/productivity'
+					'https://qds-hackathon.herokuapp.com/api/productivity'
 				);
 				const responseData = await response.json();
 				const responseArray = responseData.map(el => el.productivity);

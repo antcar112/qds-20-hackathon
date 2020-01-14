@@ -21,6 +21,10 @@ app.use((req, res, next) => {
 
 app.use('/api', routes);
 
+app.get('/', (req, res, next) => {
+	res.send('hello');
+});
+
 mongoose
 	.connect(
 		`mongodb+srv://${process.env.DB_USER}:${process.env
@@ -28,7 +32,9 @@ mongoose
 		{ useNewUrlParser: true, useUnifiedTopology: true }
 	)
 	.then(() => {
-		app.listen(5000, () => console.log('database connected'));
+		app.listen(process.env.PORT || 5000, () =>
+			console.log('Database connected')
+		);
 	})
 	.catch(err => {
 		console.log(err);
